@@ -41,13 +41,17 @@ a:hover, a:active {
 <p style="color:white"> <a href="portfolio.html">Portfolio</a></p>
 <p style="color:white"><a href="aboutme.html">About Me</a> </p>
         <center>
-            
+
             <p style="color:white"> Sonata No17 Tempest 3rd Movement </p>            
-      <audio controls autoplay >
-  <source src="Sounds/Sonata No17 Tempest 3rd Movement.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
+            <iframe src="Sounds/Sonata No17 Tempest 3rd Movement.mp3" allow="autoplay" id="audio" style="display:none" wfd-invisible="true"></iframe>
+
+
+
+
+<audio id="audioID" autoplay="" loop="" controls=""> <source src="Sounds/Sonata No17 Tempest 3rd Movement.mp3" type="audio/mp3"> 
 </audio>
-            
+           
+                 
 <p style="color:white"> Immortals by fall out boy </p>            
       <audio controls preload="auto">
   <source src="Sounds/Immortals.mp3" type="audio/mpeg">
@@ -64,6 +68,17 @@ Your browser does not support the audio element.
 <footer>
     </footer>
     <script>
-var myaudio = document.getElementById("Sounds/Sonata No17 Tempest 3rd Movement.mp3").autoplay = true;
+<script wfd-invisible="true">
+var myaudio = document.getElementById("audioID");
+
+function PlayStop() { 
+if (elem.innerText=="Play") {
+    elem.innerText = "Stop";
+}
+else {
+    elem.innerText = "Play";
+}
+return myaudio.paused ? myaudio.play() : myaudio.pause();
+};`</script>
 </script>
 </html>
