@@ -32,54 +32,55 @@ a:hover, a:active {
 </style>
 </head>
       <body>
-        <h2 id="this-is-pierces-homepage" style="color:white;">This is Pierce's Homepage</h2>
+          
+        <div class="figure" onmouseover="playMusic()">
+<img src="Images/imageedit_1_3201005378.gif" alt="Home Icon"><p class="caption"> </p>
+          <h2 id="this-is-pierces-homepage" style="color:white;">This is Pierce's Homepage</h2>
 
 <h3 style="color:white;"> Below are links to my Portfolio and the About Me Section. </h3>
-<div class="figure">
-<img src="Images/imageedit_1_3201005378.gif" alt="Home Icon"><p class="caption"> </p>
-</div>
+
+
 <p style="color:white"> <a href="portfolio.html">Portfolio</a></p>
 <p style="color:white"><a href="aboutme.html">About Me</a> </p>
         <center>
 
             <p style="color:white"> Sonata No17 Tempest 3rd Movement </p>            
-            <iframe src="Sounds/Sonata No17 Tempest 3rd Movement.mp3" allow="autoplay" id="audio" wfd-=""></iframe>
+            <iframe src="Sounds/Sonata No17 Tempest 3rd Movement.mp3" allow="autoplay" id="audio" style="display:none" wfd-invisible="true"></iframe>
 
 
+<audio id="audioID" autoplay="" loop="" controls=""> <source src="Sounds/Sonata No17 Tempest 3rd Movement.mp3" type="audio/mp3"> 
+</audio>
+    
 
        
                  
 <p style="color:white"> Immortals by fall out boy </p>            
-      <audio controls="" preload="auto">
+      <audio controls preload="auto">
   <source src="Sounds/Immortals.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
         
 <p style="color:white"> Darkside by Alan Walker</p>                 
-      <audio controls="" preload="auto">
+      <audio controls preload="auto">
   <source src="Sounds/Darkside.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>        
             </center>
-
-<footer>
-    </footer>
-    <script>
-<script wfd-invisible="true">
-var myaudio = document.getElementById("audioID");
-
-function PlayStop() { 
-if (elem.innerText=="Play") {
-    elem.innerText = "Stop";
-}
-else {
-    elem.innerText = "Play";
-}
-return myaudio.paused ? myaudio.play() : myaudio.pause();
-};`</script>
-
-
-</body>
+          </div>
+          
+  <center>        
+ <audio id="divAudio">
+   <source src="Sounds/Sonata No17 Tempest 3rd Movement.mp3" type="audio/mp3">
+</audio>
+</center>
+<script>
+   var vAudio = document.getElementById("divAudio");
+   function playMusic()
+   {
+      vAudio.play();
+   }
+</script>         
+            </body>    
 <footer>
     </footer>
 
