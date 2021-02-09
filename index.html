@@ -31,7 +31,7 @@ a:hover, a:active {
 }
 </style>
 </head>
-    <body>
+      <body>
         <h2 id="this-is-pierces-homepage" style="color:white;">This is Pierce's Homepage</h2>
 
 <h3 style="color:white;"> Below are links to my Portfolio and the About Me Section. </h3>
@@ -43,27 +43,42 @@ a:hover, a:active {
         <center>
 
             <p style="color:white"> Sonata No17 Tempest 3rd Movement </p>            
-            <iframe src="Sounds/Sonata No17 Tempest 3rd Movement.mp3" allow="autoplay" id="audio" style="display:none" wfd-invisible="true"></iframe>
+            <iframe src="Sounds/Sonata No17 Tempest 3rd Movement.mp3" allow="autoplay" id="audio" wfd-=""></iframe>
 
 
-<audio id="audioID" autoplay="" loop="" controls=""> <source src="Sounds/Sonata No17 Tempest 3rd Movement.mp3" type="audio/mp3"> 
-</audio>
-    
 
        
                  
 <p style="color:white"> Immortals by fall out boy </p>            
-      <audio controls preload="auto">
+      <audio controls="" preload="auto">
   <source src="Sounds/Immortals.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
         
 <p style="color:white"> Darkside by Alan Walker</p>                 
-      <audio controls preload="auto">
+      <audio controls="" preload="auto">
   <source src="Sounds/Darkside.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>        
             </center>
+
+<footer>
+    </footer>
+    <script>
+<script wfd-invisible="true">
+var myaudio = document.getElementById("audioID");
+
+function PlayStop() { 
+if (elem.innerText=="Play") {
+    elem.innerText = "Stop";
+}
+else {
+    elem.innerText = "Play";
+}
+return myaudio.paused ? myaudio.play() : myaudio.pause();
+};`</script>
+
+
 </body>
 <footer>
     </footer>
